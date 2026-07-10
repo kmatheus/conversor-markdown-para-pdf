@@ -1,0 +1,7 @@
+# Ignorar arquivos pessoais de produção
+markdowns/curriculo-kelvin-*
+pdfs/curriculo-kelvin-*
+previews/curriculo-kelvin-*
+
+# Manter o controle das pastas no Git, mas ignorar arquivos temporários do sistema
+.DS_Store
