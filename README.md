@@ -33,20 +33,32 @@ Para criar e ativar o script automatizador no seu sistema, siga estes 3 passos n
 
 ## 🚀 Como Executar
 
-Para gerar o PDF e a página de Preview simultaneamente, chame o script passando o **nome** e a **versão** como argumentos (separados por espaço):
+Para gerar o PDF e a página de Preview simultaneamente, chame o script passando o **nome**, a **versão** e, **opcionalmente**, uma fonte do sistema (caso queira mudar a padrão profissional que é Arial) como argumentos (separados por espaço):
 
 ```bash
-./gerar-pdf.sh [NOME] [VERSÃO]
+./gerar-pdf.sh [NOME] [VERSÃO] [FONTE_OPCIONAL]
 ```
 
-### 💡 Exemplo de Uso:
-```bash
-./gerar-pdf.sh kelvin v1
-```
+### 💡 Exemplos de Uso:
 
-O comando acima processará o arquivo `markdowns/curriculo-kelvin-v1.md` e entregará:
-1. O documento final pronto em `pdfs/curriculo-kelvin-v1.pdf`.
-2. Uma página da web em `previews/curriculo-kelvin-v1.html` para conferência rápida no navegador.
+* **Usando a fonte padrão (Arial):**
+  ```bash
+  ./gerar-pdf.sh exemplo v1
+  ```
+
+* **Alterando para uma fonte sem espaços:**
+  ```bash
+  ./gerar-pdf.sh exemplo v1 Georgia
+  ```
+
+* **Alterando para uma fonte com espaços (obrigatório o uso de aspas):**
+  ```bash
+  ./gerar-pdf.sh exemplo v1 "Times New Roman"
+  ```
+
+O comando acima processará o arquivo `markdowns/curriculo-exemplo-v1.md` e entregará:
+1. O documento final pronto em `pdfs/curriculo-exemplo-v1.pdf`.
+2. Uma página da web em `previews/curriculo-exemplo-v1.html` para conferência rápida no navegador.
 
 O sistema validará automaticamente se o arquivo `.md` existe na pasta de origem antes de renderizar os arquivos finais, evitando erros silenciosos.
 
