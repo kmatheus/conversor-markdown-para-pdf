@@ -1,4 +1,4 @@
-# 📄 Currículos de Markdown para PDF
+# 📄 Conversor de Markdown para PDF
 
 Este projeto utiliza o **Pandoc** junto com o motor **wkhtmltopdf** para converter arquivos Markdown (`.md`) diretamente em PDFs bem formatados, garantindo o suporte correto a emojis e caracteres especiais.
 
